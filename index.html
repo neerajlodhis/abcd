@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="order_main">
+        <div class="container">
+            <div class="order_main_contant">
+                <div class="order_history_col">
+                    <div class="order_history_cols">
+                        <h2 class="order_history_heading">Order History
+                        </h2>
+                        <div class="order_img_main">
+                            <div class="order_img">
+                                <img src="images/b2.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="order_palce_history">
+                            <div class="order_palce_history_contant">
+                                <div class="order_palce_history_contant_main">
+                                    <div class="order_palce_history_col">
+                                        <div class="order_palce_history_cols">
+                                            <div class="placed_order">
+                                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                            </div>
+                                            <h5 class="placed_order_heading">Placed</h5>
+                                        </div>
+                                    </div>
+                                    <div class="order_palce_history_col">
+                                        <div class="order_palce_history_cols">
+                                            <div class="approved">
+                                                <i class="fa fa-file-o" aria-hidden="true"></i>
+                                            </div>
+                                            <h5 class="placed_order_heading">Approved</h5>
+                                        </div>
+                                    </div>
+                                    <div class="order_palce_history_col">
+                                        <div class="order_palce_history_cols">
+                                            <div class="dispatched">
+                                                <i class="fa fa-square" aria-hidden="true"></i>
+                                            </div>
+                                            <h5 class="placed_order_heading">Dispatched</h5>
+                                        </div>
+                                    </div>
+                                    <div class="order_palce_history_col">
+                                        <div class="order_palce_history_cols">
+                                            <div class="placeds_order">
+                                                <i class="fa fa-truck" aria-hidden="true"></i>
+                                            </div>
+                                            <h5 class="placed_order_heading">Delivered</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Checkbox -->
+    <div class="checkbox">
+        <input type="checkbox">
+        <span>Html</span>
+    </div>
+
+    <!-- js -->
+    <script src="js/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".placed_order").click(function () {
+                $(".order_palce_history_contant_main").toggleClass("active");
+            });
+        });  
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".approved").click(function () {
+                $(".order_palce_history_contant_main").toggleClass("active2");
+            });
+        });  
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".dispatched").click(function () {
+                $(".order_palce_history_contant_main").toggleClass("active3");
+            });
+        });  
+    </script>
+
+
+</body>
+
+</html>
