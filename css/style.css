@@ -64,6 +64,7 @@ body {
     padding: 11px 0px;
     border-bottom: 1.5px solid #ddd;
     font-weight: bolder;
+    background-color: red;
 }
 
 .order_img_main {
